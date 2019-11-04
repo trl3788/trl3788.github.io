@@ -1,0 +1,199 @@
+#wrapper
+{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 30px 100px 10px 100px;
+}
+
+.thegrid
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100px 50px 1fr 50px;
+    grid-template-columns: 71% 29%;
+    background-color: orange;
+    min-width: 800px;
+}
+
+/*the very top of the page*/
+header
+{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+
+    font-size: 60px;
+}
+
+/*the navigation bar*/
+.navbar{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: yellow;
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
+}
+#homepage{
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+#research{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#counter{
+    grid-column: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#links{
+    grid-column: 4/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*the main body of content of the page*/
+content{
+    grid-row: 3/4;
+    
+}
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 40px;
+    margin-bottom: -5px;
+    margin-top: 14px;
+}
+logos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.pictures{
+    margin: 10px 10px 10px 10px;
+    max-height: 250px;
+}
+
+/*Done with the help of Student: Sofia Grytsenko, Major: Human Centered Computing*/
+.hangingindent{
+    padding-left: 22px;
+    text-indent: -22px;
+    text-align: left;
+}
+
+ul{
+    list-style-type: none;  
+    font-family: 'Yantramanav', sans-serif; 
+}
+li{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 17px;
+    font-family: 'Yantramanav', sans-serif;
+}
+p{
+    padding-left: 10px;
+    text-indent: 2.0em;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 525;
+}
+dl{
+    padding-left: 10px;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+img{
+    max-height: 300px;
+    border: 1px solid black;
+    margin: 0px 10px 10px 10px;
+}
+#selfimage{
+    float: left;
+}
+#counterimg{
+    float: left;
+    margin-top: 10px;
+}
+
+/*the box on the side with static information*/
+.sidebox{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    border: 1px solid black;
+    background-color: darkgray;
+    width: 74%;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 13%;
+    margin-right: 13%;
+    min-width: 200px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+#box{
+    font-family: 'Yantramanav', sans-serif;
+}
+
+h3{
+    color: red;
+    margin-bottom: -15px;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+
+
+
+
+
+/*the bottom of the page with contact info*/
+footer{
+    padding-left: 5px;
+    padding-top: 5px;
+    grid-column: 1/3;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: gray;
+    font-size: 13px;
+}
+info{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+email{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+phone{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+spaceholder{
+    grid-column: 2/3;
+    grid-row: 2/3;    
+}
+pubinfo{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+edit{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
