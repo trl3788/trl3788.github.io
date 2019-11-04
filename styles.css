@@ -129,6 +129,9 @@ img{
     float: left;
     margin-top: 10px;
 }
+#controller{
+    float: right;
+}
 
 /*the box on the side with static information*/
 .sidebox{
